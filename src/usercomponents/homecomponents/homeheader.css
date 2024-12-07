@@ -1,0 +1,78 @@
+
+
+.HomeHeader {
+  text-align: center;
+  display: flex;
+  border: 1px solid black;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: 5rem;
+  width: 100%;
+}
+.items{
+  flex:0 1 auto;
+}
+.LogoRajalaksmi {
+  height: 6rem;
+  /* margin-left: -40px; */
+}
+
+.SearchParent {
+  border: none;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  width: 25rem;
+  background-color: rgb(212, 211, 211);
+  box-shadow: 0px 0px 8px lightgray;
+}
+.SearchInput {
+  background-color: rgb(212, 211, 211);
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  width: 20rem;
+  height: 30px;
+}
+
+span {
+  display: flex;
+  align-items: center;
+}
+.Icon {
+  width: 35px;
+  height: 23px;
+}
+#Ham {
+  display: none;
+}
+.HamButton {
+  background: none;
+  border: none;
+  margin-top: 5px;
+}
+
+@media (width<=768px) {
+
+  .IconText {
+    font-size: 0px;
+  }
+  .IconText:hover{
+    /* position: absolute; */
+    font-size: initial;
+  }
+
+  .SearchParent{
+    flex-basis: 80%;
+    order: 1;
+    justify-content: space-evenly;
+    
+  }
+
+  #Ham {
+    display: inline;
+  }
+}
