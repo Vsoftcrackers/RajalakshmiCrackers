@@ -1,11 +1,42 @@
 .SubHeader {
   display: flex;
   justify-content: space-evenly;
+  z-index: 999;
   align-items: center;
   height: 2rem;
   background-image: linear-gradient(120deg, #ecc400, #fff8a8,  #ddac17, #ffff95);
+  transition: transform 0.3s ease,opacity 0.3s ease;
 }
 .subitems{
     font-family:"kanit",sans-serif;
-    
+}
+.SubHeader.hidden{
+  transform: translateY(-100%);
+  opacity:0;
+  pointer-events: none;
+}
+.SubHeader.visible{
+  transform: translateY(0);
+  opacity:1;
+  pointer-events:auto;
+}
+
+@media(width<=768px){
+  .SubHeader{
+    position: fixed;
+    top: 5rem;
+    left: -100%;
+    width: 100%;
+    z-index: 1000;
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+
+  }
+  .SubHeader.visible{
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
 }
