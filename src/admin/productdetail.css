@@ -1,0 +1,154 @@
+@import url(https://fonts.googleapis.com/css?family=Bungee+Spice);
+h1 {
+  font-family: "Bungee Spice";
+ 
+}
+
+.product-detail-container {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+.product-info-section,
+.product-gallery-section {
+  flex: 1;
+  padding: 60px;
+  border-radius: 8px;
+  background: linear-gradient(to right, rgb(221, 221, 221), rgb(255, 255, 255));
+  
+}
+.field-row {
+  display: flex;
+}
+.half-width {
+  flex: 1;
+}
+.input {
+  width: 100%; 
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #b6b6b6;
+  border-radius: 4px;
+  box-sizing: border-box; 
+}
+
+textarea.input 
+{
+  resize: vertical; 
+  min-height: 100px; 
+  max-height: 300px; 
+}
+
+.field {
+  margin-bottom: 15px;
+}
+
+.field.half-width {
+  flex: 1;
+  margin-right: 10px; 
+}
+
+.field:last-child {
+  margin-right: 0; 
+}
+
+
+.heading {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.sub-categories {
+  font-size: 14px;
+  color: #c50b0b;
+  margin-bottom: 20px;
+}
+
+.sub-category {
+  margin-right: 5px;
+}
+
+.product-fields .field {
+  margin-bottom: 15px;
+}
+
+.field label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.product-gallery-section h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.gallery-box {
+  text-align: center;
+  padding: 20px;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.browse-button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.file-input {
+  display: none;
+}
+
+.gallery-preview {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 50px;
+  text-align: center;
+  background: #a8a8a8;
+  color: #020202;
+  margin-bottom: 55px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.update-button {
+  background: linear-gradient(90deg, rgb(212, 6, 34), rgb(226, 66, 101));
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-button {
+  background: linear-gradient(90deg, rgb(51, 148, 51), rgb(66, 190, 17));
+
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cancel-button {
+  background: linear-gradient(90deg, rgb(67, 131, 204), rgb(90, 57, 150));
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .product-detail-container {
+    flex-direction: column; 
+    gap: 15px; 
+    padding: 10px; 
+  }
+}

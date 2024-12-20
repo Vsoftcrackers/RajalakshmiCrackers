@@ -1,0 +1,82 @@
+.testimonials {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center; /* Center align heading and content inside */
+}
+
+.testimonials h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  align-items: center; 
+}
+
+.testimonial-slides {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial-slide {
+  display: none;
+  padding: 20px;
+  text-align: center;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 90%; /* Adjust width for responsiveness */
+  max-width: 500px; /* Limit the card width */
+  margin: 0 auto; /* Center the card horizontally */
+}
+
+.testimonial-slide.active {
+  display: block;
+}
+
+.testimonial-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.testimonial-dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px; /* Adjust spacing for better visibility */
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.testimonial-dot.active {
+  background-color: #717171;
+}
+
+button.prev, button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); /* Ensure proper centering */
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 1;
+}
+
+button.prev {
+  left: -10px; /* Adjust positioning to avoid overlapping the card */
+}
+
+button.next {
+  right: -10px; /* Adjust positioning to avoid overlapping the card */
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}

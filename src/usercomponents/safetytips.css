@@ -1,0 +1,111 @@
+.safetytips-container {
+  width: 90%;
+  max-width: 1142px;
+  margin: 0 auto;
+  background-color: #fffefe;
+  padding: 50px 0;
+}
+
+/* Center the h1 */
+.safetytips-container h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.sections-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.section {
+  flex-basis: calc(50% - 15px);
+  background-color: #c5ffdd;
+  border-radius: 28px;
+  padding: 20px;
+  position: relative;
+  transition: transform 0.2s ease-in-out;
+}
+
+.section:hover {
+  transform: scale(1.01);
+}
+
+/* Section titles */
+.section h2 {
+  font-size: 30px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+/* Individual items (Do's or Don'ts) */
+.do-item, .dont-item {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.do-item:hover, .dont-item:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s ease-in-out;
+}
+
+.do-item:focus, .dont-item:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+/* Icon styling */
+.icon {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.do-icon {
+  color: #3ecd5e; /* Green for Do's */
+}
+
+.dont-icon {
+  color: #e44002; /* Red for Don'ts */
+}
+
+/* Image styling */
+.image-style {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Responsive styling */
+@media only screen and (max-width: 979px) {
+  .section {
+    flex-basis: 100%; /* Stack sections vertically */
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .safetytips-container {
+    width: 96%;
+  }
+  .section h2 {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 639px) {
+  .section {
+    padding: 15px;
+  }
+  .section h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .icon {
+    font-size: 18px;
+  }
+}

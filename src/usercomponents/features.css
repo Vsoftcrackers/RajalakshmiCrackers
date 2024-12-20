@@ -1,0 +1,79 @@
+.features-section {
+  padding: 50px;
+  background: linear-gradient(to bottom, #f3f4f6, #e6e6fa); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+  gap: 25px;
+  width: 100%;
+  max-width: 1200px;
+}
+.feature-card {
+  padding: 25px;
+  border-radius: 15px;
+  background: linear-gradient(to right, #e0e0e0, #f88787); /* Orange to red gradient */
+  color: #fff;
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Soft shadow on hover */
+}
+
+.feature-icon {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  color: #fff;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+  color: #fffa65; /* Gold color when hovered */
+  transform: scale(1.1);
+}
+
+.feature-title {
+  font-size: 1.7rem;
+  margin: 15px 0;
+  color: #000000;
+  font-weight: bold;
+}
+
+.feature-description {
+  font-size: 1rem;
+  color: #b42d2d;
+  line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .features-grid {
+    grid-template-columns: 1fr; /* 1 card per row on small screens */
+  }
+
+  .feature-card {
+    padding: 20px;
+  }
+
+  .feature-title {
+    font-size: 1.5rem;
+  }
+
+  .feature-description {
+    font-size: 0.9rem;
+  }
+}
