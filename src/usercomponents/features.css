@@ -1,79 +1,48 @@
-.features-section {
-  padding: 50px;
-  background: linear-gradient(to bottom, #f3f4f6, #e6e6fa); 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
+/* Features.css */
 
-.features-grid {
+.features-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
-  gap: 25px;
-  width: 100%;
-  max-width: 1200px;
-}
-.feature-card {
-  padding: 25px;
-  border-radius: 15px;
-  background: linear-gradient(to right, #e0e0e0, #f88787); /* Orange to red gradient */
-  color: #fff;
-  text-align: center;
-  position: relative;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: #f0f8ff; /* Light blue background */
 }
 
-.feature-card:hover {
+.feature-item {
+  background: linear-gradient(135deg, #ffafbd, #ffc3a0); /* Gradient background */
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-item:hover {
   transform: translateY(-8px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Soft shadow on hover */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
 }
 
 .feature-icon {
-  font-size: 3.5rem;
-  margin-bottom: 20px;
-  color: #fff;
-  transition: transform 0.3s ease, color 0.3s ease;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 15px;
+  border: 3px solid white;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
 }
 
-.feature-card:hover .feature-icon {
-  color: #fffa65; /* Gold color when hovered */
-  transform: scale(1.1);
+.feature-item h3 {
+  font-size: 1.6rem;
+  color: #ffffff; /* White text */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
 }
 
-.feature-title {
-  font-size: 1.7rem;
-  margin: 15px 0;
-  color: #000000;
-  font-weight: bold;
-}
-
-.feature-description {
+.feature-item p {
   font-size: 1rem;
-  color: #b42d2d;
-  line-height: 1.6;
-}
-
-@media (max-width: 1024px) {
-  .features-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 cards per row on medium screens */
-  }
-}
-
-@media (max-width: 768px) {
-  .features-grid {
-    grid-template-columns: 1fr; /* 1 card per row on small screens */
-  }
-
-  .feature-card {
-    padding: 20px;
-  }
-
-  .feature-title {
-    font-size: 1.5rem;
-  }
-
-  .feature-description {
-    font-size: 0.9rem;
-  }
+  color: #fefefe;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  line-height: 1.5;
 }
