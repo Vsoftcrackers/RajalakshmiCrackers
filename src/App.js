@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Safetytips from './usercomponents/safetytips';
 import ProductDetail from './admin/productdetail';
 import ContactPage from './usercomponents/contactpage';
+import SortBy from './userpages/sortby';
 
 function App() {
   const testimonials = [
@@ -79,6 +80,7 @@ function App() {
       <Safetytips/>
       <ProductDetail/>
     <ContactPage/>
+    <SortBy/>
     </div>
   );
 }
